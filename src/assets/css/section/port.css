@@ -1,3 +1,127 @@
 #port {
   height: 3000px;
+  margin-top: 30vh;
+  overflow: hidden;
+}
+.port_inner {
+  padding: 16px;
+}
+.port_title {
+  /* position: sticky;
+  top: 70px;
+  left: 0; */
+  width: 100%;
+  height: 5vw;
+  font-size: 4vw;
+  font-family: var(--mainNum-fon);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--black100);
+  border-bottom: 0.4vw solid var(--black);
+  margin-bottom: 16px;
+}
+.port_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 7000px;
+}
+.port_item {
+  width: 500px;
+  height: 70vh;
+  background-color: var(--subBg100);
+  padding: 2.5rem;
+  margin-right: 20px;
+}
+.port_item.p1 {
+  background-color: var(--subBg200);
+}
+.port_item.p2 {
+  background-color: var(--subBg300);
+}
+.port_item.p3 {
+  background-color: var(--subBg400);
+}
+.port_item.p4 {
+  background-color: var(--subBg500);
+}
+.port_item.p5 {
+  background-color: var(--subBg200);
+}
+.port_item.p6 {
+  background-color: var(--subBg300);
+}
+.port_item.p7 {
+  background-color: var(--subBg400);
+}
+.port_item.p8 {
+  background-color: var(--subBg500);
+}
+.port_item.p9 {
+  background-color: var(--subBg200);
+}
+.port_item.p10 {
+  background-color: var(--subBg300);
+}
+.port_item .num {
+  font-size: 2rem;
+  font-family: var(--mainNum-fon);
+}
+/* 넘버 가려지게 */
+.port_item .img {
+  display: block;
+  margin-top: -20px;
+  transition: margin-top 0.3s;
+}
+.port_item:hover .img {
+  margin-top: 0;
+}
+.port_item .img img {
+  border-radius: 5px;
+  filter: saturate(100%);
+  transition: all 0.3s;
+}
+.port_item .img:hover img {
+  filter: saturate(0%);
+}
+.port_item .title {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  color: var(--black100);
+  border-bottom: 2px solid var(--black100);
+  margin-bottom: 1rem;
+}
+.port_item .desc {
+  font-size: 1rem;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* 보여줄 줄 수 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.port_item .site {
+  border: 1px solid var(--black100);
+  display: block;
+  text-align: center;
+  padding: 0.625rem 1.5rem;
+  margin-top: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  .port_title {
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 30px;
+    height: auto;
+    top: 68px;
+    background-color: var(--mainBg-color);
+    z-index: 1000;
+  }
+  .port_item {
+    width: 400px;
+    padding: 40px 30px;
+    height: auto;
+  }
 }
