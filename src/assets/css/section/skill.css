@@ -19,10 +19,7 @@
   color: var(--black100);
   border-bottom: 0.4vw solid var(--black);
 }
-.skill_title em {
-  font-size: 1.25rem;
-  font-weight: 400;
-}
+
 .skill_desc {
   width: 50%;
 }
