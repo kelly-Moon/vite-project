@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 export function port() {
   gsap.registerPlugin(ScrollTrigger);
 
+  const horizontal = document.querySelector("#port");
   const horSection = gsap.utils.toArray(".port_item");
 
   gsap.to(horSection, {
