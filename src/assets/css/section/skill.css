@@ -1,2 +1,62 @@
 #skill {
 }
+
+.skill_inner {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.skill_title {
+  position: sticky;
+  top: 70px;
+  left: 0;
+  width: 50%;
+  height: 5vw;
+  font-size: 4vw;
+  font-family: var(--mainNum-fon);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--black100);
+  border-bottom: 0.4vw solid var(--black);
+}
+.skill_title em {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.skill_desc {
+  width: 50%;
+}
+.skill_desc span {
+  font-size: 5vw;
+  line-height: 1;
+  font-weight: 700;
+}
+.skill_desc h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.skill_desc p {
+  margin-bottom: 30vh;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .skill_inner {
+    flex-direction: column;
+  }
+  .skill_title {
+    width: 100%;
+    margin-bottom: 10vw;
+    font-size: 30px;
+    height: auto;
+    top: 68px;
+    background-color: var(--mainBg-color);
+  }
+  .skill_desc {
+    width: 100%;
+  }
+  .skill_desc span {
+    font-size: 20vw;
+  }
+}

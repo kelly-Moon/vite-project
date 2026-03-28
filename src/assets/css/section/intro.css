@@ -12,6 +12,7 @@
   padding: 16px;
 }
 .intro_title {
+  color: var(--black100);
   font-size: 8vw;
   text-transform: uppercase;
   line-height: 1;
