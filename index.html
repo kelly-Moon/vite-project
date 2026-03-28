@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vite-project</title>
 
-    <link rel="stylesheet" href="public/favicon.svg" />
     <link rel="stylesheet" href="src/assets/css/style.css" />
   </head>
   <body>
@@ -20,9 +19,34 @@
       <a href="#footer">푸터 영역 바로가기</a>
     </div>
     <!-- //skip -->
-    <header id="header">header</header>
+    <header id="header" role="banner">
+      <div class="header_inner">
+        <div class="header_logo">
+          <h1>
+            <a href="#">portfolio <em>vite</em></a>
+          </h1>
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="#intro">intro</a></li>
+            <li><a href="#skill">skill</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div
+          class="header_nav_mobile"
+          id="headerToggle"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0">
+          <span></span>
+        </div>
+      </div>
+    </header>
     <!-- //header -->
-    <main id="main">
+    <main id="main" role="main">
       <section id="intro">intro</section>
       <!-- // intro-->
 
@@ -39,7 +63,7 @@
       <!-- //contact -->
     </main>
     <!-- //main -->
-    <footer id="footer">footer</footer>
+    <footer id="footer" role="contentinfo">footer</footer>
     <!-- //footer -->
     <script type="module" src="src/assets/js/main.js"></script>
   </body>
