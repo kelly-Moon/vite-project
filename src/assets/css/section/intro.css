@@ -1,150 +1,176 @@
 #intro {
-  height: 100vh;
+    height: 100vh;
 }
+
 .intro_inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* justify-content: center; 일단 이렇게 쓰고 반응형 만들고 수정 */
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; 일단 이렇게 쓰고 반응형 만들고 수정 */
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
 }
+
 .intro_title {
-  color: var(--black100);
-  font-size: 8vw;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 800;
-  white-space: nowrap; /*글자가 아래도 떨어지지 않게*/
-  text-indent: -0.5vw; /*옆에 여백 없게 만들기 위해서*/
-  letter-spacing: -0.3vw;
+    color: var(--black100);
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    white-space: nowrap; /*글자가 아래도 떨어지지 않게*/
+    text-indent: -0.5vw; /*옆에 여백 없게 만들기 위해서*/
+    letter-spacing: -0.3vw;
 }
+
 .intro_text {
-  width: 100%;
-  height: 40vh;
-  /* background-color: var(--black); */
-  background: url(/src/assets/img/intro.jpg) center;
-  background-size: cover;
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+    width: 100%;
+    height: 40vh;
+    /* background-color: var(--black); */
+    background: url(/src/assets/img/intro.jpg) center;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
+
 .intro_text .text {
-  font-size: 3vw;
-  line-height: 1;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: center;
-  position: relative;
-  z-index: 100;
-  transition: all 0.3s;
-  cursor: all-scroll;
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s;
+    cursor: all-scroll;
 }
+
 .intro_text .img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 30vh;
-  height: 30vh;
-  border-radius: 50%;
-  overflow: hidden;
-  filter: grayscale(100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
 }
+
 .intro_text:hover .img {
-  filter: grayscale(0);
+    filter: grayscale(0);
 }
+
 .intro_text:hover .text {
-  opacity: 0;
+    opacity: 0;
 }
+
 .intro_lines {
-  width: 100%;
+    width: 100%;
 }
+
 .intro_lines .line {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--black);
-  margin-bottom: 0.5vw;
-  background: url(/src/assets/img/intro.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    margin-bottom: 0.5vw;
+    background: url(/src/assets/img/intro.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 .intro_lines.bottom .line {
-  margin-top: 0.5vw;
-  margin-bottom: 0;
-  display: none;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    display: none;
 }
+
 .intro_lines .line:nth-child(1) {
-  height: 1px;
+    height: 1px;
 }
+
 .intro_lines .line:nth-child(2) {
-  height: 2px;
+    height: 2px;
 }
+
 .intro_lines .line:nth-child(3) {
-  height: 5px;
+    height: 5px;
 }
+
 .intro_lines .line:nth-child(4) {
-  height: 9px;
+    height: 9px;
 }
+
 .intro_lines .line:nth-child(5) {
-  height: 13px;
+    height: 13px;
 }
+
 .intro_lines .line:nth-child(6) {
-  height: 17px;
+    height: 17px;
 }
+
 .intro_lines .line:nth-child(7) {
-  height: 25px;
+    height: 25px;
 }
 
 .intro_lines.bottom .line:nth-child(1) {
-  height: 25px;
+    height: 25px;
 }
+
 .intro_lines.bottom .line:nth-child(2) {
-  height: 17px;
+    height: 17px;
 }
+
 .intro_lines.bottom .line:nth-child(3) {
-  height: 13px;
+    height: 13px;
 }
+
 .intro_lines.bottom .line:nth-child(4) {
-  height: 9px;
+    height: 9px;
 }
+
 .intro_lines.bottom .line:nth-child(5) {
-  height: 5px;
+    height: 5px;
 }
+
 .intro_lines.bottom .line:nth-child(6) {
-  height: 2px;
+    height: 2px;
 }
+
 .intro_lines.bottom .line:nth-child(7) {
-  height: 1px;
+    height: 1px;
 }
 
 @media (max-width: 800px) {
-  .intro_inner {
-    justify-content: center;
-  }
-  .intro_lines.bottom .line {
-    display: block;
-  }
-  .intro_text .text {
-    font-size: 24px;
-  }
+    .intro_inner {
+        justify-content: center;
+    }
 
-  .intro_text .text {
-    font-size: 24px;
-    padding: 0 16px;
-  }
+    .intro_lines.bottom .line {
+        display: block;
+    }
+
+    .intro_text .text {
+        font-size: 24px;
+    }
+
+    .intro_text .text {
+        font-size: 24px;
+        padding: 0 16px;
+    }
 }
 
 @media (max-width: 320px) {
-  .intro_title {
-    display: none;
-  }
-  /* 이건 상황봐서 없애준다 */
+    .intro_title {
+        display: none;
+    }
+
+    /* 이건 상황봐서 없애준다 */
 }

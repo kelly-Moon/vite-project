@@ -1,124 +1,148 @@
 #contact {
-  height: 100vh;
+    height: 100vh;
 }
-.contact_inner {
-  width: 100%;
-  height: 100%;
-  display: flex;
 
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 16px;
+.contact_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
 }
+
 .contact_title {
-  color: var(--black100);
-  font-size: 8vw;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: 800;
-  white-space: nowrap; /*글자가 아래도 떨어지지 않게*/
-  text-indent: -0.5vw; /*옆에 여백 없게 만들기 위해서*/
-  letter-spacing: -0.3vw;
+    color: var(--black100);
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 800;
+    white-space: nowrap; /*글자가 아래도 떨어지지 않게*/
+    text-indent: -0.5vw; /*옆에 여백 없게 만들기 위해서*/
+    letter-spacing: -0.3vw;
 }
+
 .contact_text {
-  width: 100%;
-  height: 40vh;
-  /* background-color: var(--black); */
-  background: url(/src/assets/img/contact.jpg) center;
-  background-size: cover;
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
+    width: 100%;
+    height: 40vh;
+    /* background-color: var(--black); */
+    background: url(/src/assets/img/contact.jpg) center;
+    background-size: cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
+
 .contact_text .text {
-  font-size: 3vw;
-  line-height: 1;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: center;
-  position: relative;
-  z-index: 100;
-  transition: all 0.3s;
-  cursor: all-scroll;
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    transition: all 0.3s;
+    cursor: all-scroll;
 }
+
 .contact_lines {
-  width: 100%;
+    width: 100%;
 }
+
 .contact_lines .line {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: var(--black);
-  margin-bottom: 0.5vw;
-  background: url(/src/assets/img/contact.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+    margin-bottom: 0.5vw;
+    background: url(/src/assets/img/contact.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 .contact_lines.top .line {
-  margin-top: 0.5vw;
-  margin-bottom: 0;
-  display: none;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    display: none;
 }
+
 .contact_lines.top .line:nth-child(1) {
-  height: 1px;
+    height: 1px;
 }
+
 .contact_lines.top .line:nth-child(2) {
-  height: 2px;
+    height: 2px;
 }
+
 .contact_lines.top .line:nth-child(3) {
-  height: 5px;
+    height: 5px;
 }
+
 .contact_lines.top .line:nth-child(4) {
-  height: 9px;
+    height: 9px;
 }
+
 .contact_lines.top .line:nth-child(5) {
-  height: 13px;
+    height: 13px;
 }
+
 .contact_lines.top .line:nth-child(6) {
-  height: 17px;
+    height: 17px;
 }
+
 .contact_lines.top .line:nth-child(7) {
-  height: 25px;
+    height: 25px;
 }
 
 .contact_lines.bottom .line:nth-child(1) {
-  height: 25px;
+    height: 25px;
 }
+
 .contact_lines.bottom .line:nth-child(2) {
-  height: 17px;
+    height: 17px;
 }
+
 .contact_lines.bottom .line:nth-child(3) {
-  height: 13px;
+    height: 13px;
 }
+
 .contact_lines.bottom .line:nth-child(4) {
-  height: 9px;
+    height: 9px;
 }
+
 .contact_lines.bottom .line:nth-child(5) {
-  height: 5px;
+    height: 5px;
 }
+
 .contact_lines.bottom .line:nth-child(6) {
-  height: 2px;
+    height: 2px;
 }
+
 .contact_lines.bottom .line:nth-child(7) {
-  height: 1px;
+    height: 1px;
 }
 
 @media (max-width: 800px) {
-  .contact_inner {
-    justify-content: center;
-  }
-  .contact_lines.top .line {
-    display: block;
-  }
-  .contact_text .text {
-    font-size: 24px;
-  }
-  .contact_title {
-    display: none;
-  }
+    .contact_inner {
+        justify-content: center;
+    }
+
+    .contact_lines.top .line {
+        display: block;
+    }
+
+    .contact_text .text {
+        font-size: 24px;
+    }
+
+    .contact_title {
+        display: none;
+    }
 }
+
